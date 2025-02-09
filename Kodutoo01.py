@@ -1,0 +1,30 @@
+import turtle
+x = 100
+
+turtle.penup()
+turtle.goto(-50,50)
+turtle.pendown()
+turtle.forward(x)
+turtle.right(90)
+turtle.forward(x)
+turtle.right(90)
+turtle.forward(x)
+turtle.right(90)
+turtle.forward(x)
+turtle.right(90)
+turtle.penup()
+turtle.goto(0,75)
+turtle.pendown()
+turtle.right(45)
+turtle.forward(x)
+turtle.right(90)
+turtle.forward(x)
+turtle.right(90)
+turtle.forward(x)
+turtle.right(90)
+turtle.forward(x)
+turtle.left(45)
+turtle.penup()
+
+turtle.done()
+
