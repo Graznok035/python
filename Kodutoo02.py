@@ -1,11 +1,11 @@
 import turtle
 import random
-
+turtle.speed(0)
 def joonista_kujund(kujund, x, y, suurus):
     turtle.penup()
     turtle.goto(x, y)
     turtle.pendown()
-    turtle.speed(0)
+
     
     if kujund == 'viisnurk':
         for _ in range(5):
