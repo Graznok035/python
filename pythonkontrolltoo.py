@@ -24,17 +24,24 @@ admin_arv = 0
 for user in info["kasutajad"]:
     if "admin" in user["roll"]:
         admin_arv += 1
+    print(f'Administraatoreid on {admin_arv}')
 
-print(f'Administraatoreid on {admin_arv}')
-
+else:
+    print('Kasutajad ei leitud')
 #################################################################################
 
+peatatud_kasutajad = [
+    user["nimi"]
+    for user in info["kasutajad"]
+    if user["staatus"] == "peatatud"
+]
 
-
-
-
-
-
+print("Peatatud kasutajad:")
+if peatatud_kasutajad:
+    for nimi in peatatud_kasutajad:
+        print(nimi)
+else:
+    print("Kasutajaid ei leitud")
 
 
 
